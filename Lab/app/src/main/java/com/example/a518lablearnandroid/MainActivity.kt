@@ -42,11 +42,12 @@ import com.example.a518lablearnandroid.ui.theme._518LabLearnAndroidTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+       // Log.i("Lifecycle", "MainActivity")
         enableEdgeToEdge()
         setContent {
             RBGCardView(
                 onNextActivity = {
-                    startActivity(Intent(this, ListActivity3::class.java))
+                    startActivity(Intent(this, MenuActivity::class.java))
                 }
             )
 
